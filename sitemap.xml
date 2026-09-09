@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  IMPORTANT: replace REPLACE-WITH-YOUR-DOMAIN below with your real
+  published domain (e.g. bin-sharida.com or dasdossary-eng.github.io/bin-sharida)
+  before uploading this file, otherwise Google Search Console will
+  reject it.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/index.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/thermal.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/thermal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/thermal.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/mada.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/mada.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/mada.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/a4.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/a4.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/a4.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/labels.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/labels.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/labels.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/solutions.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/solutions.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/terms.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/privacy.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/thermal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/mada.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/a4.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/labels.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/solutions.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
