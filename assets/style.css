@@ -478,6 +478,83 @@ section {
   color: var(--stamp);
   flex: none;
 }
+
+/* long-form guide articles */
+.article p {
+  font-size: 15.5px;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  margin: 0 0 20px;
+}
+.article h2 {
+  font-size: clamp(20px, 2.6vw, 26px);
+  font-weight: 800;
+  margin: 40px 0 16px;
+}
+.article h2:first-child {
+  margin-top: 0;
+}
+.article ul.use-list {
+  margin-bottom: 28px;
+}
+.article-cta {
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 28px 30px;
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.article-cta p {
+  margin: 0;
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 15.5px;
+}
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.hub-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.hub-card span.tag-mini {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: var(--stamp);
+  margin-bottom: 10px;
+}
+.hub-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 10px;
+}
+.hub-card p {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+  flex: 1;
+}
+.hub-card a.product-link {
+  align-self: flex-start;
+}
+@media (max-width: 700px) {
+  .hub-grid {
+    grid-template-columns: 1fr;
+  }
+  .article-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .product-actions {
   display: flex;
   gap: 14px;
@@ -530,8 +607,8 @@ section {
 /* why us */
 .why-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
 }
 .why-item .stamp {
   display: inline-flex;

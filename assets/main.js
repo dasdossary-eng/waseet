@@ -54,6 +54,90 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+  var supplierForm = document.getElementById("supplierForm");
+  if (supplierForm) {
+    function buildSupplierMessage() {
+      var get = function (id) {
+        var el = document.getElementById(id);
+        return el ? el.value : "";
+      };
+      var lines = ["New supplier submission / عرض مورّد جديد"];
+      if (get("vCompany")) lines.push("Company: " + get("vCompany"));
+      if (get("vContact")) lines.push("Contact: " + get("vContact"));
+      if (get("vPhone")) lines.push("Phone: " + get("vPhone"));
+      if (get("vProduct")) lines.push("Product/specs: " + get("vProduct"));
+      if (get("vPrice")) lines.push("Price: " + get("vPrice"));
+      if (get("vMoq")) lines.push("Minimum order: " + get("vMoq"));
+      if (get("vCity")) lines.push("Location: " + get("vCity"));
+      var source = document.getElementById("vSource");
+      if (source && source.options.length)
+        lines.push("Imported/local: " + source.options[source.selectedIndex].text);
+      if (get("vNotes")) lines.push("Notes: " + get("vNotes"));
+      return lines.join("\n");
+    }
+
+    function showSupplierSuccess() {
+      var msg = document.getElementById("supplierSuccessMsg");
+      if (msg) msg.classList.add("show");
+    }
+
+    var waBtn = document.getElementById("supplierSendWa");
+    if (waBtn) {
+      waBtn.addEventListener("click", function () {
+        var text = buildSupplierMessage();
+        window.open("https://wa.me/966591342020?text=" + encodeURIComponent(text), "_blank");
+        showSupplierSuccess();
+      });
+    }
+
+    var emailBtn = document.getElementById("supplierSendEmail");
+    if (emailBtn) {
+      emailBtn.addEventListener("click", function () {
+        var text = buildSupplierMessage();
+        var subject = encodeURIComponent("New supplier submission - Bin Sharida");
+        window.location.href =
+          "mailto:abdullah.sharida@gmail.com?subject=" +
+          subject +
+          "&body=" +
+          encodeURIComponent(text);
+        showSupplierSuccess();
+      });
+    }
+  }
+  var calcProduct = document.getElementById("calcProduct");
+  var calcQty = document.getElementById("calcQty");
+  var calcTotal = document.getElementById("calcTotal");
+  var calcOrderBtn = document.getElementById("calcOrderBtn");
+  if (calcProduct && calcQty && calcTotal) {
+    function updateCalc() {
+      var parts = calcProduct.value.split("|");
+      var price = parseFloat(parts[0]);
+      var qty = parseInt(calcQty.value, 10);
+      if (!qty || qty < 1) qty = 1;
+      var total = price * qty;
+      var suffix = calcTotal.textContent.replace(/[0-9,]/g, "").trim();
+      calcTotal.textContent = total.toLocaleString() + " " + suffix;
+    }
+    calcProduct.addEventListener("change", updateCalc);
+    calcQty.addEventListener("input", updateCalc);
+
+    if (calcOrderBtn) {
+      calcOrderBtn.addEventListener("click", function () {
+        var parts = calcProduct.value.split("|");
+        var price = parseFloat(parts[0]);
+        var name = parts[1];
+        var qty = parseInt(calcQty.value, 10);
+        if (!qty || qty < 1) qty = 1;
+        var total = price * qty;
+        var text =
+          "New order / طلب جديد\n" +
+          "Product: " + name + "\n" +
+          "Quantity: " + qty + " carton(s)\n" +
+          "Estimated total: " + total;
+        window.open("https://wa.me/966591342020?text=" + encodeURIComponent(text), "_blank");
+      });
+    }
+  }
 });
 
 function prefillQuote(category) {
