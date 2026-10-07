@@ -1,217 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  IMPORTANT: replace REPLACE-WITH-YOUR-DOMAIN below with your real
-  published domain (e.g. bin-sharida.com or dasdossary-eng.github.io/bin-sharida)
-  before uploading this file, otherwise Google Search Console will
-  reject it.
--->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/index.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/index.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/index.html"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/thermal.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/thermal.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/thermal.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/thermal.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/thermal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/thermal.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/mada.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/mada.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/mada.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/mada.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/mada.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/mada.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/partners.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/partners.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/partners.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/partners.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/partners.html"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/suppliers.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/suppliers.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/suppliers.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/suppliers.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/suppliers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/suppliers.html"/>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/hub.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/hub.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/hub.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/hub.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/hub.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/hub.html"/>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/faq.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/faq.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/calculator.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/calculator.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/calculator.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/calculator.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/guide-cashier-size.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/guide-cashier-size.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/guide-cashier-size.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/guide-cashier-size.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/guide-cashier-size.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/guide-cashier-size.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/guide-mada-vs-cashier.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/guide-mada-vs-cashier.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/guide-mada-vs-cashier.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/guide-mada-vs-cashier.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/guide-mada-vs-cashier.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/guide-mada-vs-cashier.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/guide-shipping-labels.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/guide-shipping-labels.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/guide-shipping-labels.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/guide-shipping-labels.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/guide-shipping-labels.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/guide-shipping-labels.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/guide-a4-consumption.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/guide-a4-consumption.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/guide-a4-consumption.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/guide-a4-consumption.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/guide-a4-consumption.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/guide-a4-consumption.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/guide-recurring-supply.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/guide-recurring-supply.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/guide-recurring-supply.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/guide-recurring-supply.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/guide-recurring-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/guide-recurring-supply.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/a4.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/a4.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/a4.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/a4.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/a4.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/a4.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/labels.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/labels.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/labels.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/labels.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/labels.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/labels.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/solutions.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/solutions.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/solutions.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/solutions.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/solutions.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/terms.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/terms.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/terms.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/terms.html"/>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/ar/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://REPLACE-WITH-YOUR-DOMAIN/ar/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://REPLACE-WITH-YOUR-DOMAIN/en/privacy.html"/>
+    <loc>https://dasdossary-eng.github.io/waseet/ar/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://dasdossary-eng.github.io/waseet/ar/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dasdossary-eng.github.io/waseet/en/privacy.html"/>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/index.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/thermal.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/thermal.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/mada.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/mada.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/partners.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/partners.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/suppliers.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/suppliers.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/hub.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/hub.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/faq.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/faq.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/calculator.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/calculator.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/guide-cashier-size.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/guide-cashier-size.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/guide-mada-vs-cashier.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/guide-mada-vs-cashier.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/guide-shipping-labels.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/guide-shipping-labels.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/guide-a4-consumption.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/guide-a4-consumption.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/guide-recurring-supply.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/guide-recurring-supply.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/a4.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/a4.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/labels.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/labels.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-YOUR-DOMAIN/en/solutions.html</loc>
+    <loc>https://dasdossary-eng.github.io/waseet/en/solutions.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

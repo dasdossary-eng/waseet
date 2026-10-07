@@ -1,8 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   var toggle = document.querySelector(".navtoggle");
+  var navlinks = document.querySelector(".navlinks");
+  
   if (toggle) {
     toggle.addEventListener("click", function () {
-      document.querySelector(".navlinks").classList.toggle("open");
+      navlinks.classList.toggle("open");
+    });
+  }
+
+  // Close mobile menu when a link is clicked
+  if (navlinks) {
+    var navlinksA = navlinks.querySelectorAll("a");
+    navlinksA.forEach(function (link) {
+      link.addEventListener("click", function () {
+        navlinks.classList.remove("open");
+      });
     });
   }
 
@@ -21,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
 
       // Build a real WhatsApp message from the form and open it.
-      // Previously this handler only showed the success message locally —
-      // nothing was ever actually sent anywhere.
       var company = document.getElementById("company");
       var contact = document.getElementById("contact");
       var phone = document.getElementById("phone");
