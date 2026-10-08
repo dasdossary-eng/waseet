@@ -104,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (get("vContact")) lines.push("Contact: " + get("vContact"));
       if (get("vPhone")) lines.push("Phone: " + get("vPhone"));
       if (get("vProduct")) lines.push("Product/specs: " + get("vProduct"));
-      if (get("vPrice")) lines.push("Price: " + get("vPrice"));
       if (get("vMoq")) lines.push("Minimum order: " + get("vMoq"));
       if (get("vCity")) lines.push("Location: " + get("vCity"));
       var source = document.getElementById("vSource");
