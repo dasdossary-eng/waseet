@@ -60,7 +60,6 @@ img {
   padding: 0 28px;
 }
 
-/* perforation divider — literal tear-line motif */
 .perf {
   height: 22px;
   width: 100%;
@@ -78,7 +77,6 @@ img {
   border-top: 1px dashed var(--line);
 }
 
-/* header */
 header {
   position: sticky;
   top: 0;
@@ -182,7 +180,6 @@ header {
   outline-offset: 2px;
 }
 
-/* breadcrumb (product pages) */
 .breadcrumb {
   font-family: "IBM Plex Mono", monospace;
   font-size: 13px;
@@ -193,7 +190,6 @@ header {
   color: var(--ink);
 }
 
-/* hero */
 .hero {
   padding: 96px 0 64px;
   display: grid;
@@ -271,7 +267,6 @@ header {
   filter: drop-shadow(0 18px 26px rgba(20, 20, 15, 0.06));
 }
 
-/* page hero */
 .page-hero {
   padding: 36px 0 48px;
 }
@@ -295,7 +290,6 @@ header {
   margin: 0;
 }
 
-/* trust strip / seals */
 .trust-strip {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -336,7 +330,6 @@ header {
   color: var(--ink-soft);
 }
 
-/* section shell */
 section {
   padding: 72px 0;
 }
@@ -363,7 +356,6 @@ section {
   padding: 6px 12px;
 }
 
-/* product summary cards (home) */
 .products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -425,7 +417,6 @@ section {
   border-color: var(--stamp);
 }
 
-/* product detail page */
 .product-detail {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -456,12 +447,6 @@ section {
   width: 100%;
   border-radius: 10px;
   display: block;
-}
-.product-photos {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  width: 100%;
 }
 .product-body h2 {
   font-size: clamp(24px, 3vw, 32px);
@@ -521,7 +506,6 @@ section {
   flex: none;
 }
 
-/* long-form guide articles */
 .article p {
   font-size: 15.5px;
   line-height: 1.85;
@@ -590,15 +574,6 @@ section {
 .hub-card a.product-link {
   align-self: flex-start;
 }
-@media (max-width: 700px) {
-  .hub-grid {
-    grid-template-columns: 1fr;
-  }
-  .article-cta {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 .product-actions {
   display: flex;
   gap: 14px;
@@ -624,33 +599,6 @@ section {
   color: var(--ink-soft);
 }
 
-.related {
-  margin-top: 64px;
-  padding-top: 40px;
-  border-top: 1px solid var(--line);
-}
-.related h3 {
-  font-size: 18px;
-  font-weight: 800;
-  margin: 0 0 20px;
-}
-.related-links {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-.related-links a {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 12px 18px;
-  font-size: 14.5px;
-  font-weight: 600;
-}
-.related-links a:hover {
-  border-color: var(--ink);
-}
-
-/* why us */
 .why-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -681,7 +629,6 @@ section {
   margin: 0;
 }
 
-/* coming soon */
 .coming-soon {
   background: var(--white);
   border: 1px solid var(--line);
@@ -709,7 +656,6 @@ section {
   border-radius: 999px;
 }
 
-/* quote form */
 .quote {
   background: var(--white);
   border: 1px solid var(--line);
@@ -844,7 +790,6 @@ section {
   display: block;
 }
 
-/* footer */
 footer {
   border-top: 1px solid var(--line);
   padding: 56px 0 32px;
@@ -890,7 +835,6 @@ footer {
   border-top: 1px dashed var(--line);
 }
 
-/* floating whatsapp */
 .whatsapp-float {
   position: fixed;
   inset-inline-start: 22px;
@@ -916,7 +860,6 @@ footer {
   height: 24px;
 }
 
-/* reveal */
 .hero h1,
 .hero p.lead,
 .hero-actions,
@@ -963,7 +906,6 @@ footer {
   }
 }
 
-/* responsive */
 @media (max-width: 920px) {
   .navlinks {
     display: none;
@@ -1061,5 +1003,3 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-
-/* end */

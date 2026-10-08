@@ -1,9 +1,49 @@
 document.addEventListener("DOMContentLoaded", function () {
   var toggle = document.querySelector(".navtoggle");
+  var navlinks = document.querySelector(".navlinks");
+
+  function setMenuState(isOpen) {
+    if (!navlinks || !toggle) return;
+    navlinks.classList.toggle("open", isOpen);
+    toggle.classList.toggle("open", isOpen);
+    toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.textContent = isOpen ? "✕" : "≡";
+  }
+
   if (toggle) {
-    toggle.addEventListener("click", function () {
-      document.querySelector(".navlinks").classList.toggle("open");
+    toggle.addEventListener("click", function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      var shouldOpen = !navlinks.classList.contains("open");
+      setMenuState(shouldOpen);
     });
+  }
+
+  if (navlinks) {
+    navlinks.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        setMenuState(false);
+      });
+    });
+  }
+
+  document.addEventListener("click", function (event) {
+    if (!navlinks || !toggle) return;
+    var clickedInsideMenu = navlinks.contains(event.target);
+    var clickedToggle = toggle.contains(event.target);
+    if (!clickedInsideMenu && !clickedToggle) {
+      setMenuState(false);
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      setMenuState(false);
+    }
+  });
+
+  if (toggle && !toggle.getAttribute("aria-expanded")) {
+    toggle.setAttribute("aria-expanded", "false");
   }
 
   document.querySelectorAll(".chip").forEach(function (chip) {
@@ -20,9 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      // Build a real WhatsApp message from the form and open it.
-      // Previously this handler only showed the success message locally —
-      // nothing was ever actually sent anywhere.
       var company = document.getElementById("company");
       var contact = document.getElementById("contact");
       var phone = document.getElementById("phone");
@@ -54,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+
   var supplierForm = document.getElementById("supplierForm");
   if (supplierForm) {
     function buildSupplierMessage() {
@@ -104,6 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
+
   var calcProduct = document.getElementById("calcProduct");
   var calcQty = document.getElementById("calcQty");
   var calcTotal = document.getElementById("calcTotal");
