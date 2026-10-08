@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3f0e9"/><stop offset="1" stop-color="#e4dfd4"/></linearGradient>
+ <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffefb"/><stop offset="1" stop-color="#d9d5cb"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="25" stdDeviation="22" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1200" height="900" rx="48" fill="url(#bg)"/>
+<ellipse cx="600" cy="750" rx="330" ry="55" fill="#14140f" opacity=".09"/>
+<g filter="url(#shadow)" transform="translate(300 145)">
+ <g transform="rotate(-3 300 310)">
+  <rect x="80" y="70" width="430" height="610" rx="10" fill="url(#paper)" stroke="#c7c0b4" stroke-width="8"/>
+  <path d="M80 610h430" stroke="#e4dfd5" stroke-width="5"/>
+  <rect x="150" y="150" width="290" height="18" rx="9" fill="#14140f" opacity=".9"/>
+  <rect x="150" y="205" width="230" height="12" rx="6" fill="#aaa49a"/>
+  <rect x="150" y="238" width="270" height="12" rx="6" fill="#c0bbb1"/>
+  <rect x="150" y="312" width="250" height="190" rx="8" fill="#eeeae2" stroke="#c7c0b4" stroke-width="4"/>
+  <path d="M180 350h190M180 390h150M180 430h170M180 470h120" stroke="#bbb5ab" stroke-width="10" stroke-linecap="round"/>
+ </g>
+ <g transform="translate(455 190) rotate(7)">
+  <rect x="0" y="0" width="320" height="470" rx="10" fill="#fbfaf5" stroke="#c7c0b4" stroke-width="7"/>
+  <rect x="48" y="70" width="215" height="12" rx="6" fill="#14140f"/>
+  <rect x="48" y="115" width="180" height="10" rx="5" fill="#b9b3a9"/>
+  <rect x="48" y="150" width="210" height="10" rx="5" fill="#c5c0b7"/>
+ </g>
+</g>
+<text x="600" y="835" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#14140f" letter-spacing="5">A4 COPY PAPER</text>
+</svg>
