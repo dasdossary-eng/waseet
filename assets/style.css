@@ -1071,3 +1071,16 @@ footer {
   .hero-photo-small { width: 105px; height: 105px; }
   .hero-photo-label { bottom: 22px; }
 }
+
+/* Social channels: accounts will be linked once the official profiles are registered. */
+footer .footer-col:last-child::after {
+  content: "X  •  LinkedIn";
+  display: block;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  letter-spacing: .02em;
+  color: var(--ink-soft);
+}
