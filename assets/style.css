@@ -1003,3 +1003,71 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* 2026 site refinement: keep partner/supplier pages in footer, not top navigation */
+.navlinks a[href="./partners.html"],
+.navlinks a[href="./suppliers.html"] { display: none; }
+
+.hero-visual {
+  position: relative;
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+}
+.hero-photo-main {
+  width: min(420px, 72%);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 24px 60px rgba(20,20,15,.16);
+  transform: rotate(-2deg);
+}
+.hero-photo-small {
+  position: absolute;
+  width: 155px;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(20,20,15,.18);
+}
+.hero-photo-small.one { top: 10px; inset-inline-start: 2%; transform: rotate(7deg); }
+.hero-photo-small.two { bottom: 8px; inset-inline-end: 1%; transform: rotate(-7deg); }
+.hero-photo-label {
+  position: absolute;
+  bottom: 34px;
+  inset-inline-start: 8%;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  box-shadow: 0 10px 30px rgba(20,20,15,.10);
+}
+.product-photo {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 22px;
+  background: #ece9e2;
+  display: block;
+}
+.vat-callout {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 1px solid rgba(178,58,46,.28);
+  border-radius: 12px;
+  background: rgba(178,58,46,.05);
+}
+.vat-callout strong { display:block; margin-bottom:4px; }
+.vat-callout span { color:var(--ink-soft); font-size:13px; }
+@media (max-width: 900px) {
+  .hero-visual { min-height: 320px; margin-top: 28px; }
+  .hero-photo-small { width: 125px; height: 125px; }
+  .product-photo { height: 170px; }
+}
+@media (max-width: 600px) {
+  .hero-photo-small { width: 105px; height: 105px; }
+  .hero-photo-label { bottom: 22px; }
+}
