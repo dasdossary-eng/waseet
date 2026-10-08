@@ -87,6 +87,7 @@ header {
   max-width: var(--wrap);
   margin: 0 auto;
   gap: 20px;
+  position: relative;
 }
 .brand img {
   height: 34px;
@@ -146,10 +147,29 @@ header {
   display: none;
   background: none;
   border: 1px solid var(--ink);
-  padding: 8px 10px;
-  font-size: 20px;
+  border-radius: 999px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  font-size: 22px;
   line-height: 1;
   cursor: pointer;
+  color: var(--ink);
+  transition: all 0.2s ease;
+  align-items: center;
+  justify-content: center;
+}
+.navtoggle:hover,
+.navtoggle.open {
+  background: var(--ink);
+  color: var(--paper);
+}
+.navtoggle:focus-visible,
+.navlinks a:focus-visible,
+.lang-switch:focus-visible,
+.nav-cta:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
 }
 
 /* breadcrumb (product pages) */
@@ -163,7 +183,7 @@ header {
   color: var(--ink);
 }
 
-/* hero (home) */
+/* hero */
 .hero {
   padding: 96px 0 64px;
   display: grid;
@@ -237,7 +257,7 @@ header {
   height: auto;
 }
 
-/* page hero (product pages — simpler) */
+/* page hero */
 .page-hero {
   padding: 36px 0 48px;
 }
@@ -660,7 +680,7 @@ section {
   white-space: nowrap;
 }
 
-/* quote form — manifest style */
+/* quote form */
 .quote {
   background: var(--white);
   border: 1px solid var(--line);
@@ -794,8 +814,8 @@ footer {
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr 0.9fr 0.9fr 0.9fr;
-  gap: 32px;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  gap: 40px;
   margin-bottom: 44px;
 }
 .footer-brand img {
@@ -858,7 +878,7 @@ footer {
   height: 24px;
 }
 
-/* reveal (single orchestrated hero entrance) */
+/* reveal */
 .hero h1,
 .hero p.lead,
 .hero-actions,
@@ -911,21 +931,21 @@ footer {
     display: none;
   }
   .navtoggle {
-    display: inline-block;
+    display: inline-flex;
   }
   .navlinks.open {
     display: flex;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 16px;
+    right: 16px;
     flex-direction: column;
     gap: 0;
     align-items: stretch;
-    position: absolute;
-    top: 100%;
-    inset-inline: 0;
-    left: 0;
-    right: 0;
-    background: var(--paper);
-    border-bottom: 1px solid var(--line);
-    padding: 6px 20px 14px;
+    background: rgba(241, 239, 233, 0.98);
+    border: 1px solid var(--line);
+    box-shadow: 0 12px 28px rgba(20, 20, 15, 0.08);
+    padding: 8px 18px 14px;
     z-index: 60;
   }
   .navlinks.open a {
@@ -1001,98 +1021,6 @@ footer {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-  .trust-strip .wrap {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
 }
 
-:focus-visible {
-  outline: 2px solid var(--stamp);
-  outline-offset: 2px;
-}
-
-/* business solutions / package cards */
-.packages {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
-  margin-bottom: 48px;
-}
-.package {
-  background: var(--white);
-  padding: 36px 32px;
-  display: flex;
-  flex-direction: column;
-}
-.package .package-tag {
-  align-self: flex-start;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-  font-weight: 700;
-  border: 1px solid var(--stamp);
-  color: var(--stamp);
-  padding: 5px 10px;
-  margin-bottom: 16px;
-}
-.package h3 {
-  font-size: 22px;
-  font-weight: 800;
-  margin: 0 0 10px;
-}
-.package p.desc {
-  color: var(--ink-soft);
-  font-size: 15px;
-  margin: 0 0 22px;
-}
-.package ul.package-items {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 22px;
-  flex: 1;
-}
-.package ul.package-items li {
-  padding: 9px 0;
-  border-top: 1px dashed var(--line);
-  font-size: 14.5px;
-  display: flex;
-  gap: 10px;
-}
-.package ul.package-items li:first-child {
-  border-top: 0;
-}
-.package ul.package-items li::before {
-  content: "—";
-  color: var(--stamp);
-  flex: none;
-}
-.package .fit {
-  font-size: 13px;
-  color: var(--ink-soft);
-  font-family: "IBM Plex Mono", monospace;
-  margin-bottom: 20px;
-}
-.soon-strip {
-  background: var(--paper-dim);
-  border: 1px dashed var(--line);
-  padding: 24px 30px;
-  margin-bottom: 48px;
-}
-.soon-strip h4 {
-  margin: 0 0 8px;
-  font-size: 16px;
-  font-weight: 800;
-}
-.soon-strip p {
-  margin: 0;
-  color: var(--ink-soft);
-  font-size: 14.5px;
-}
-@media (max-width: 920px) {
-  .packages {
-    grid-template-columns: 1fr;
-  }
-}
+/* end */
