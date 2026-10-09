@@ -145,19 +145,31 @@ document.addEventListener("DOMContentLoaded", function () {
   var calcProduct = document.getElementById("calcProduct");
   var calcQty = document.getElementById("calcQty");
   var calcTotal = document.getElementById("calcTotal");
+  var calcNote = document.getElementById("calcNote");
   var calcOrderBtn = document.getElementById("calcOrderBtn");
   if (calcProduct && calcQty && calcTotal) {
+    var isArabic = document.documentElement.lang === "ar";
     function updateCalc() {
       var parts = calcProduct.value.split("|");
       var price = parseFloat(parts[0]);
       var qty = parseInt(calcQty.value, 10);
       if (!qty || qty < 1) qty = 1;
+      if (qty >= 10) {
+        calcTotal.textContent = isArabic ? "عرض سعر جملة" : "Wholesale quote";
+        if (calcNote) calcNote.textContent = isArabic
+          ? "للطلبات من 10 كراتين فأكثر، يُحدد السعر بعرض جملة حسب الكمية وشروط التوصيل."
+          : "For 10 cartons or more, pricing is quoted separately based on quantity and delivery terms.";
+        return;
+      }
       var total = price * qty;
-      var suffix = calcTotal.textContent.replace(/[0-9,]/g, "").trim();
-      calcTotal.textContent = total.toLocaleString() + " " + suffix;
+      calcTotal.textContent = total.toLocaleString() + (isArabic ? " ريال" : " SAR");
+      if (calcNote) calcNote.textContent = isArabic
+        ? "تقدير للمنتج فقط؛ التوصيل للمناطق الأخرى يُحدد حسب الاتفاق والكمية."
+        : "Product estimate only; delivery to other locations is confirmed by agreement and quantity.";
     }
     calcProduct.addEventListener("change", updateCalc);
     calcQty.addEventListener("input", updateCalc);
+    updateCalc();
 
     if (calcOrderBtn) {
       calcOrderBtn.addEventListener("click", function () {
@@ -167,11 +179,21 @@ document.addEventListener("DOMContentLoaded", function () {
         var qty = parseInt(calcQty.value, 10);
         if (!qty || qty < 1) qty = 1;
         var total = price * qty;
-        var text =
-          "New order / طلب جديد\n" +
-          "Product: " + name + "\n" +
-          "Quantity: " + qty + " carton(s)\n" +
-          "Estimated total: " + total;
+        var text;
+        if (qty >= 10) {
+          text =
+            "Wholesale quote request / طلب عرض سعر جملة\n" +
+            "Product: " + name + "\n" +
+            "Quantity: " + qty + " carton(s)\n" +
+            "Please provide the wholesale price and delivery terms / نرجو تزويدنا بسعر الجملة وشروط التوصيل.";
+        } else {
+          text =
+            "New order / طلب جديد\n" +
+            "Product: " + name + "\n" +
+            "Quantity: " + qty + " carton(s)\n" +
+            "Estimated product total: " + total + (isArabic ? " SAR" : " SAR") + "\n" +
+            "Delivery to locations outside the free-delivery neighborhoods is subject to agreement.";
+        }
         window.open("https://wa.me/966591342020?text=" + encodeURIComponent(text), "_blank");
       });
     }
