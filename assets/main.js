@@ -164,8 +164,8 @@ document.addEventListener("DOMContentLoaded", function () {
       var total = price * qty;
       calcTotal.textContent = total.toLocaleString() + (isArabic ? " ريال" : " SAR");
       if (calcNote) calcNote.textContent = isArabic
-        ? "تقدير للمنتج فقط؛ التوصيل للمناطق الأخرى يُحدد حسب الاتفاق والكمية."
-        : "Product estimate only; delivery to other locations is confirmed by agreement and quantity.";
+        ? "السعر تقديري للمنتج فقط؛ التوصيل مجاني للأحياء المحددة، وبقية المناطق حسب الاتفاق والكمية."
+        : "Product estimate only; free delivery applies to the listed neighborhoods. Other locations are by agreement and quantity.";
     }
     calcProduct.addEventListener("change", updateCalc);
     calcQty.addEventListener("input", updateCalc);
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "New order / طلب جديد\n" +
             "Product: " + name + "\n" +
             "Quantity: " + qty + " carton(s)\n" +
-            "Estimated product total: " + total + (isArabic ? " SAR" : " SAR") + "\n" +
+            "Estimated product total: " + total + (isArabic ? " ريال" : " SAR") + "\n" +
             "Delivery to locations outside the free-delivery neighborhoods is subject to agreement.";
         }
         window.open("https://wa.me/966591342020?text=" + encodeURIComponent(text), "_blank");
