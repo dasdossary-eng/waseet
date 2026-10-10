@@ -796,9 +796,9 @@ footer {
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 44px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 28px;
+  margin-bottom: 36px;
 }
 .footer-brand img {
   height: 30px;
@@ -1072,24 +1072,10 @@ footer {
   .hero-photo-label { bottom: 22px; }
 }
 
-/* Social channels: accounts will be linked once the official profiles are registered. */
-footer .footer-col:last-child::after {
-  content: "X  •  LinkedIn";
-  display: block;
-  margin-top: 12px;
-  padding-top: 10px;
-  border-top: 1px dashed var(--line);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-  letter-spacing: .02em;
-  color: var(--ink-soft);
-}
-
-
 /* Accessible social media icon links */
-.social-icons{display:flex;align-items:center;gap:12px;margin-top:12px}
-.social-icon{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--line,#d9dee5);border-radius:50%;color:inherit;background:transparent;transition:background .2s ease,color .2s ease,transform .2s ease}
-.social-icon:hover{background:var(--text,#172033);color:#fff;transform:translateY(-2px)}
+.social-icons{display:flex;align-items:center;gap:10px;margin-top:14px}
+.social-icon{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid var(--line,#d9dee5);border-radius:50%;color:inherit;background:transparent;transition:background .2s ease,color .2s ease,transform .2s ease}
+.social-icon:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px)}
 .social-icon svg{width:20px;height:20px;display:block;fill:currentColor}
 .social-icon:focus-visible{outline:3px solid #5b9cff;outline-offset:3px}
 .social-icon[aria-disabled="true"]{opacity:.55;cursor:default}
