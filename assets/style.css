@@ -1079,3 +1079,91 @@ footer {
 .social-icon svg{width:20px;height:20px;display:block;fill:currentColor}
 .social-icon:focus-visible{outline:3px solid #5b9cff;outline-offset:3px}
 .social-icon[aria-disabled="true"]{opacity:.55;cursor:default}
+
+
+/* Homepage trust strip: balanced cards with clear reading order */
+.trust-strip {
+  padding: 24px 0;
+  background: rgba(230, 227, 218, 0.42);
+}
+.trust-strip .wrap {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+.trust-strip .seal-item {
+  min-width: 0;
+  min-height: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 18px 18px 16px;
+  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.trust-strip .seal-badge {
+  width: auto;
+  height: auto;
+  min-height: 0;
+  padding: 4px 9px;
+  border: 0;
+  border-radius: 5px;
+  transform: none;
+  background: var(--stamp-soft);
+  color: var(--stamp);
+  font-family: "Cairo", "Inter", sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 800;
+  text-align: start;
+  white-space: nowrap;
+}
+html[lang="en"] .trust-strip .seal-badge {
+  font-family: "Inter", "Cairo", sans-serif;
+}
+.trust-strip .seal-item span.label {
+  font-family: "Cairo", "Inter", sans-serif;
+  font-size: 13px;
+  line-height: 1.65;
+  letter-spacing: 0;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+html[lang="en"] .trust-strip .seal-item span.label {
+  font-family: "Inter", "Cairo", sans-serif;
+}
+@media (max-width: 900px) {
+  .trust-strip .wrap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .trust-strip .seal-item {
+    min-height: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .trust-strip {
+    padding: 18px 0;
+  }
+  .trust-strip .wrap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+  .trust-strip .seal-item {
+    padding: 13px 12px;
+    min-height: 106px;
+    gap: 8px;
+  }
+  .trust-strip .seal-badge {
+    font-size: 10px;
+    white-space: normal;
+  }
+  .trust-strip .seal-item span.label {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+}
