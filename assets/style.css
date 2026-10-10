@@ -1167,3 +1167,15 @@ html[lang="en"] .trust-strip .seal-item span.label {
     line-height: 1.55;
   }
 }
+
+
+/* Three focused homepage trust cards */
+.trust-strip .wrap {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1060px;
+}
+@media (max-width: 900px) {
+  .trust-strip .wrap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
