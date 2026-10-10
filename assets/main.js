@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var text = buildSupplierMessage();
         var subject = encodeURIComponent("New supplier submission - Bin Sharida");
         window.location.href =
-          "mailto:binsharida@outlook.com?subject=" +
+          "mailto:binsharida@outlook.sa?subject=" +
           subject +
           "&body=" +
           encodeURIComponent(text);
