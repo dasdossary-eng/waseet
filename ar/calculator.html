@@ -1,149 +1,43 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="robots" content="index,follow" />
-<meta name="description" content="كوّن طلبك من منتجات بن شريدة، اجمع الكراتين من أكثر من منتج، ثم أرسل الطلب مباشرة عبر واتساب." />
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="index,follow" /><meta name="description" content="كوّن طلبك من منتجات بن شريدة، اجمع الكراتين من أكثر من منتج، ثم أرسل الطلب مباشرة عبر واتساب." />
 <title>كوّن طلبك بنفسك — بن شريدة</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/style.css?v=11" />
-<link rel="icon" type="image/png" href="../assets/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" /><link rel="stylesheet" href="../assets/style.css?v=12" /><link rel="icon" type="image/png" href="../assets/favicon.png" />
 <style>
-.bundle-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
-.bundle-products,.bundle-summary{background:#fff;border:1px solid rgba(20,20,15,.12);border-radius:18px;padding:28px}
-.bundle-product{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:20px 0;border-bottom:1px solid rgba(20,20,15,.1)}
-.bundle-product:last-child{border-bottom:0}
-.bundle-product h3{margin:0 0 6px}
-.bundle-product p{margin:0;color:#666;font-size:.92rem}
-.qty-control{display:flex;align-items:center;gap:10px}
-.qty-control button{width:38px;height:38px;border:1px solid #ccc;background:#fff;border-radius:50%;font-size:22px;cursor:pointer}
-.qty-control output{min-width:28px;text-align:center;font-weight:700}
-.summary-line{display:flex;justify-content:space-between;gap:20px;padding:12px 0}
-.summary-total{font-size:1.35rem;font-weight:800;border-top:1px solid #ddd;margin-top:8px;padding-top:18px}
-.wholesale{margin-top:18px;padding:15px;border-radius:12px;background:#f3efe7}
-.wholesale strong{display:block;margin-bottom:5px}
-.whatsapp-order{width:100%;margin-top:20px}
-.bundle-note{font-size:.88rem;color:#666;line-height:1.7}
-@media(max-width:800px){.bundle-grid{grid-template-columns:1fr}.bundle-products,.bundle-summary{padding:20px}}
+.bundle-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}.bundle-products,.bundle-summary{background:#fff;border:1px solid rgba(20,20,15,.12);border-radius:18px;padding:28px}.bundle-product{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:20px 0;border-bottom:1px solid rgba(20,20,15,.1)}.bundle-product:last-child{border-bottom:0}.bundle-product h3{margin:0 0 6px}.bundle-product p{margin:0;color:#666;font-size:.92rem}.qty-control{display:flex;align-items:center;gap:10px}.qty-control button{width:38px;height:38px;border:1px solid #ccc;background:#fff;border-radius:50%;font-size:22px;cursor:pointer}.qty-control output{min-width:28px;text-align:center;font-weight:700}.summary-line{display:flex;justify-content:space-between;gap:20px;padding:12px 0}.summary-total{font-size:1.35rem;font-weight:800;border-top:1px solid #ddd;margin-top:8px;padding-top:18px}.wholesale{margin-top:18px;padding:15px;border-radius:12px;background:#f3efe7}.wholesale strong{display:block;margin-bottom:5px}.whatsapp-order{width:100%;margin-top:20px}.bundle-note{font-size:.88rem;color:#666;line-height:1.7}.clear-order{width:100%;margin-top:10px;background:transparent}.clear-order:disabled{opacity:.5;cursor:not-allowed}@media(max-width:800px){.bundle-grid{grid-template-columns:1fr}.bundle-products,.bundle-summary{padding:20px}}
 </style>
 </head>
 <body>
-<header>
-<nav class="nav" aria-label="التنقل الرئيسي">
-<a class="brand" href="./index.html"><img src="../assets/logo.png" alt="بن شريدة — Bin Sharida" /></a>
-<div class="navlinks" id="primary-nav">
-<a href="./index.html#products">المنتجات</a>
-<a href="./calculator.html">كوّن طلبك بنفسك</a>
-<a href="./index.html#about">لماذا نحن؟</a>
-<a href="./index.html#quote">تواصل</a>
+<header><nav class="nav" aria-label="التنقل الرئيسي"><a class="brand" href="./index.html"><img src="../assets/logo.png" alt="بن شريدة — Bin Sharida" /></a><div class="navlinks" id="primary-nav"><a href="./index.html#products">المنتجات</a><a href="./calculator.html">كوّن طلبك بنفسك</a><a href="./index.html#about">لماذا نحن؟</a><a href="./index.html#quote">تواصل</a></div><div class="nav-right"><a class="lang-switch" href="../en/calculator.html">English</a><a href="#builder" class="nav-cta">كوّن طلبك</a><button class="navtoggle" aria-label="فتح القائمة" aria-controls="primary-nav" aria-expanded="false" type="button">≡</button></div></nav></header>
+<main id="builder"><div class="wrap"><p class="breadcrumb"><a href="./index.html">الرئيسية</a> / كوّن طلبك بنفسك</p></div><section class="page-hero"><div class="wrap"><p class="kicker mono">Build Your Order</p><h1>كوّن طلبك بنفسك</h1><p class="lead">اختر المنتجات والكميات التي تناسب احتياج منشأتك، واجمع أكثر من منتج في طلب واحد.</p></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="bundle-grid"><div class="bundle-products"><h2>1. اختر المنتجات</h2>
+<div class="bundle-product" data-key="cashier" data-name="ورق الكاشير الحراري" data-price="115"><div><h3>ورق الكاشير الحراري</h3><p>80×70 مم — 50 رول/كرتون</p></div><div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل ورق الكاشير الحراري">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة ورق الكاشير الحراري">+</button></div></div>
+<div class="bundle-product" data-key="mada" data-name="ورق مدى الحراري" data-price="75"><div><h3>ورق مدى الحراري</h3><p>57×40 مم — 100 رول/كرتون</p></div><div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل ورق مدى الحراري">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة ورق مدى الحراري">+</button></div></div>
+<div class="bundle-product" data-key="a4" data-name="ورق A4" data-price="100"><div><h3>ورق A4</h3><p>ورق مكتبي — 75 غم</p></div><div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل ورق A4">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة ورق A4">+</button></div></div>
+<div class="bundle-product" data-key="labels" data-name="ملصقات الشحن" data-price="0"><div><h3>ملصقات الشحن</h3><p>المقاس والسعر حسب نظام الطباعة والطلب</p></div><div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل ملصقات الشحن">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة ملصقات الشحن">+</button></div></div>
 </div>
-<div class="nav-right">
-<a class="lang-switch" href="../en/calculator.html">English</a>
-<a href="#builder" class="nav-cta">كوّن طلبك</a>
-<button class="navtoggle" aria-label="فتح القائمة" aria-controls="primary-nav" aria-expanded="false" type="button">≡</button>
-</div>
-</nav>
-</header>
-
-<main id="builder">
-<div class="wrap"><p class="breadcrumb"><a href="./index.html">الرئيسية</a> / كوّن طلبك بنفسك</p></div>
-<section class="page-hero">
-<div class="wrap">
-<p class="kicker mono">Build Your Order</p>
-<h1>كوّن طلبك بنفسك</h1>
-<p class="lead">اختر المنتجات والكميات التي تناسب احتياج منشأتك، واجمع أكثر من منتج في طلب واحد.</p>
-</div>
-</section>
-
-<section style="padding-top:0">
-<div class="wrap">
-<div class="bundle-grid">
-<div class="bundle-products">
-<h2>1. اختر المنتجات</h2>
-<div class="bundle-product" data-name="ورق الكاشير الحراري" data-price="115">
-<div><h3>ورق الكاشير الحراري</h3><p>80×70 مم — 50 رول/كرتون</p></div>
-<div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة">+</button></div>
-</div>
-<div class="bundle-product" data-name="ورق مدى الحراري" data-price="75">
-<div><h3>ورق مدى الحراري</h3><p>57×40 مم — 100 رول/كرتون</p></div>
-<div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة">+</button></div>
-</div>
-<div class="bundle-product" data-name="ورق A4" data-price="100">
-<div><h3>ورق A4</h3><p>ورق مكتبي — 75 غم</p></div>
-<div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة">+</button></div>
-</div>
-<div class="bundle-product" data-name="ملصقات الشحن" data-price="0">
-<div><h3>ملصقات الشحن</h3><p>المقاس والسعر حسب نظام الطباعة والطلب</p></div>
-<div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة">+</button></div>
-</div>
-</div>
-
-<div class="bundle-summary">
-<h2>2. طلبك الحالي</h2>
-<div id="summary"></div>
-<div class="summary-line"><span>إجمالي الكراتين</span><strong id="cartons">0</strong></div>
-<div class="summary-line summary-total"><span>الإجمالي التقديري</span><strong id="total">0 ريال</strong></div>
-<div class="wholesale" id="wholesale"><strong>الجملة تبدأ من 10 كراتين</strong><span id="wholesaleText">أكمل الكمية للوصول إلى سعر الجملة.</span></div>
-<button type="button" class="btn btn-primary whatsapp-order" id="sendOrder">أرسل طلبك عبر واتساب</button>
-<p class="bundle-note">السعر الظاهر تقديري حسب الأسعار الحالية. ملصقات الشحن تُسعّر حسب الطلب. التوصيل يُحدد حسب المنطقة والكمية.</p>
-</div>
-</div>
-</div>
-</section>
-</main>
-
-<footer>
-<div class="wrap">
-<div class="footer-grid">
-<div class="footer-brand"><img src="../assets/logo.png" alt="بن شريدة" /><p>توريد منتظم للمواد التشغيلية للمطاعم والمقاهي والمحلات والمنشآت في المنطقة الشرقية.</p></div>
-<div class="footer-col"><h4>منتجات</h4><a href="./thermal.html">ورق الكاشير الحراري</a><a href="./mada.html">ورق مدى الحراري</a><a href="./a4.html">ورق A4</a><a href="./labels.html">ملصقات الشحن</a></div>
-<div class="footer-col"><h4>روابط سريعة</h4><a href="./calculator.html">كوّن طلبك بنفسك</a><a href="./partners.html">انضم كشريك توزيع</a><a href="./suppliers.html">سجّل كمورّد</a><a href="./faq.html">الأسئلة الشائعة</a><a href="./terms.html">الشروط والأحكام</a><a href="./payment.html">سياسة الدفع</a><a href="./privacy.html">سياسة الخصوصية</a></div>
-<div class="footer-col"><h4>تواصل</h4><a href="https://wa.me/966591342020" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:binsharida@outlook.sa">binsharida@outlook.sa</a><span>حي طيبة، الدمام</span></div>
-</div>
-<div class="footer-bottom"><span>© 2026 بن شريدة</span><span>Bin Sharida • Supply without interruption</span></div>
-</div>
-</footer>
-
+<div class="bundle-summary"><h2>2. طلبك الحالي</h2><div id="summary"></div><div class="summary-line"><span>إجمالي الكراتين</span><strong id="cartons">0</strong></div><div class="summary-line summary-total"><span>الإجمالي التقديري</span><strong id="total">0 ريال</strong></div><div class="wholesale" id="wholesale"><strong>الجملة تبدأ من 10 كراتين</strong><span id="wholesaleText">أكمل الكمية للوصول إلى سعر الجملة.</span></div><button type="button" class="btn btn-primary whatsapp-order" id="sendOrder">أرسل طلبك عبر واتساب</button><button type="button" class="btn clear-order" id="clearOrder">مسح الطلب</button><p class="bundle-note">السعر الظاهر تقديري حسب الأسعار الحالية. ملصقات الشحن تُسعّر حسب الطلب. التوصيل يُحدد حسب الموقع ويؤكد عبر واتساب.</p></div>
+</div></div></section></main>
+<footer><div class="wrap"><div class="footer-grid"><div class="footer-brand"><img src="../assets/logo.png" alt="بن شريدة" /><p>توريد منتظم للمواد التشغيلية للمطاعم والمقاهي والمحلات والمكاتب.</p></div><div class="footer-col"><h4>منتجات</h4><a href="./thermal.html">ورق الكاشير الحراري</a><a href="./mada.html">ورق مدى الحراري</a><a href="./a4.html">ورق A4</a></div><div class="footer-col"><h4>روابط سريعة</h4><a href="./calculator.html">كوّن طلبك بنفسك</a><a href="./partners.html">انضم كشريك توزيع</a><a href="./suppliers.html">الموردون</a></div><div class="footer-col"><h4>تواصل</h4><a href="https://wa.me/966591342020" target="_blank" rel="noopener">واتساب</a><a href="mailto:binsharida@outlook.sa">binsharida@outlook.sa</a><span>المنطقة الشرقية، السعودية</span></div></div><div class="footer-bottom"><span>© 2026 بن شريدة</span><span>Bin Sharida • Supply without interruption</span></div></div></footer>
 <script>
+const STORAGE_KEY='binSharidaOrderV1';
 const products=[...document.querySelectorAll('.bundle-product')];
 const summary=document.getElementById('summary');
 const cartonsEl=document.getElementById('cartons');
 const totalEl=document.getElementById('total');
 const wholesaleText=document.getElementById('wholesaleText');
-products.forEach(card=>{
-let qty=0;
-const out=card.querySelector('output');
-card.querySelector('[data-action="minus"]').addEventListener('click',()=>{qty=Math.max(0,qty-1);out.textContent=qty;render();});
-card.querySelector('[data-action="plus"]').addEventListener('click',()=>{qty+=1;out.textContent=qty;render();});
-card._getQty=()=>qty;
-});
-function render(){
-summary.innerHTML='';
-let cartons=0,total=0,items=[];
-products.forEach(card=>{
-const qty=card._getQty();
-if(qty){const name=card.dataset.name,price=Number(card.dataset.price);cartons+=qty;total+=qty*price;items.push({name,qty,price});}
-});
-items.forEach(i=>{const row=document.createElement('div');row.className='summary-line';row.innerHTML='<span>'+i.name+' × '+i.qty+'</span><strong>'+(i.price?((i.qty*i.price).toLocaleString('ar-SA')+' ريال'):'حسب الطلب')+'</strong>';summary.appendChild(row);});
-cartonsEl.textContent=cartons;
-totalEl.textContent=total.toLocaleString('ar-SA')+' ريال';
-if(cartons>=10){wholesaleText.textContent='✓ طلبك مؤهل لسعر الجملة. نؤكد السعر النهائي عبر واتساب.';}else{const remaining=10-cartons;wholesaleText.textContent=remaining+' كراتين متبقية للوصول إلى سعر الجملة.';}
-return {cartons,total,items};
-}
-document.getElementById('sendOrder').addEventListener('click',()=>{
-const {cartons,total,items}=render();
-if(!cartons){alert('اختر منتجًا واحدًا على الأقل.');return;}
-const lines=['السلام عليكم، أرغب في تكوين طلب من بن شريدة:'];
-items.forEach(i=>lines.push('- '+i.name+': '+i.qty+' كرتون'));
-lines.push('إجمالي الكراتين: '+cartons);
-if(total)lines.push('الإجمالي التقديري: '+total+' ريال');
-if(cartons>=10)lines.push('الطلب 10 كراتين أو أكثر — أرجو تأكيد سعر الجملة والتوصيل.');
-lines.push('أرجو التواصل معي لتأكيد الطلب.');
-window.open('https://wa.me/966591342020?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');
-});
+const clearOrder=document.getElementById('clearOrder');
+function loadQuantities(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}')||{};}catch(e){return{};}}
+function saveQuantities(){const quantities={};products.forEach(card=>{quantities[card.dataset.key]=card._getQty();});try{localStorage.setItem(STORAGE_KEY,JSON.stringify(quantities));}catch(e){}}
+const saved=loadQuantities();
+products.forEach(card=>{let qty=Math.max(0,Math.floor(Number(saved[card.dataset.key])||0));const out=card.querySelector('output');out.textContent=qty;card._setQty=value=>{qty=Math.max(0,Math.floor(value));out.textContent=qty;};card.querySelector('[data-action="minus"]').addEventListener('click',()=>{qty=Math.max(0,qty-1);out.textContent=qty;saveQuantities();render();});card.querySelector('[data-action="plus"]').addEventListener('click',()=>{qty+=1;out.textContent=qty;saveQuantities();render();});card._getQty=()=>qty;});
+function render(){summary.innerHTML='';let cartons=0,total=0,items=[];products.forEach(card=>{const qty=card._getQty();if(qty){const name=card.dataset.name,price=Number(card.dataset.price);cartons+=qty;total+=qty*price;items.push({name,qty,price});}});items.forEach(i=>{const row=document.createElement('div');row.className='summary-line';row.innerHTML='<span>'+i.name+' × '+i.qty+'</span><strong>'+ (i.price?(i.qty*i.price).toLocaleString('ar-SA')+' ريال':'حسب الطلب')+'</strong>';summary.appendChild(row);});cartonsEl.textContent=cartons;totalEl.textContent=total.toLocaleString('ar-SA')+' ريال';if(cartons>=10){wholesaleText.textContent='✓ طلبك مؤهل لسعر الجملة. نؤكد السعر النهائي عبر واتساب.';}else{const remaining=10-cartons;wholesaleText.textContent=(remaining===1?'أكمل كرتونًا واحدًا للوصول إلى سعر الجملة.':'أكمل '+remaining+' كراتين للوصول إلى سعر الجملة.');}clearOrder.disabled=!cartons;return{cartons,total,items};}
+clearOrder.addEventListener('click',()=>{products.forEach(card=>card._setQty(0));try{localStorage.removeItem(STORAGE_KEY);}catch(e){}render();});
+document.getElementById('sendOrder').addEventListener('click',()=>{const{cartons,total,items}=render();if(!cartons){alert('اختر منتجًا واحدًا على الأقل.');return;}const lines=['السلام عليكم، أرغب في تكوين طلب من بن شريدة:'];items.forEach(i=>lines.push('- '+i.name+': '+i.qty+' كرتون'));lines.push('إجمالي الكراتين: '+cartons);if(total)lines.push('الإجمالي التقديري: '+total+' ريال');if(cartons>=10)lines.push('الطلب 10 كراتين أو أكثر — أرجو تأكيد سعر الجملة والتوصيل.');lines.push('أرجو التواصل معي لتأكيد الطلب.');window.open('https://wa.me/966591342020?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');});
+render();
+window.addEventListener('storage',event=>{if(event.key===STORAGE_KEY){const quantities=loadQuantities();products.forEach(card=>card._setQty(Math.max(0,Math.floor(Number(quantities[card.dataset.key])||0))));render();}});
 </script>
+<script src="../assets/main.js?v=12"></script>
 </body>
 </html>
