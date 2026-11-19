@@ -63,19 +63,19 @@
 <div class="bundle-grid">
 <div class="bundle-products">
 <h2>1. اختر المنتجات</h2>
-<div class="bundle-product" data-name="ورق الكاشير الحراري" data-price="115">
+<div class="bundle-product" data-key="cashier" data-name="ورق الكاشير الحراري" data-price="115">
 <div><h3>ورق الكاشير الحراري</h3><p>80×70 مم — 50 رول/كرتون</p></div>
 <div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة">+</button></div>
 </div>
-<div class="bundle-product" data-name="ورق مدى الحراري" data-price="75">
+<div class="bundle-product" data-key="mada" data-name="ورق مدى الحراري" data-price="75">
 <div><h3>ورق مدى الحراري</h3><p>57×40 مم — 100 رول/كرتون</p></div>
 <div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة">+</button></div>
 </div>
-<div class="bundle-product" data-name="ورق A4" data-price="100">
+<div class="bundle-product" data-key="a4" data-name="ورق A4" data-price="100">
 <div><h3>ورق A4</h3><p>ورق مكتبي — 75 غم</p></div>
 <div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة">+</button></div>
 </div>
-<div class="bundle-product" data-name="ملصقات الشحن" data-price="0">
+<div class="bundle-product" data-key="labels" data-name="ملصقات الشحن" data-price="0">
 <div><h3>ملصقات الشحن</h3><p>المقاس والسعر حسب نظام الطباعة والطلب</p></div>
 <div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة">+</button></div>
 </div>
@@ -108,41 +108,48 @@
 </footer>
 
 <script>
+const STORAGE_KEY='binSharidaOrderV1';
 const products=[...document.querySelectorAll('.bundle-product')];
 const summary=document.getElementById('summary');
 const cartonsEl=document.getElementById('cartons');
 const totalEl=document.getElementById('total');
 const wholesaleText=document.getElementById('wholesaleText');
+let saved={};
+try{saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}')||{};}catch(e){saved={};}
 products.forEach(card=>{
-let qty=0;
-const out=card.querySelector('output');
-card.querySelector('[data-action="minus"]').addEventListener('click',()=>{qty=Math.max(0,qty-1);out.textContent=qty;render();});
-card.querySelector('[data-action="plus"]').addEventListener('click',()=>{qty+=1;out.textContent=qty;render();});
-card._getQty=()=>qty;
+  let qty=Math.max(0,parseInt(saved[card.dataset.key],10)||0);
+  const out=card.querySelector('output');
+  out.textContent=qty;
+  card.querySelector('[data-action="minus"]').addEventListener('click',()=>{qty=Math.max(0,qty-1);out.textContent=qty;render();});
+  card.querySelector('[data-action="plus"]').addEventListener('click',()=>{qty+=1;out.textContent=qty;render();});
+  card._getQty=()=>qty;
 });
 function render(){
-summary.innerHTML='';
-let cartons=0,total=0,items=[];
-products.forEach(card=>{
-const qty=card._getQty();
-if(qty){const name=card.dataset.name,price=Number(card.dataset.price);cartons+=qty;total+=qty*price;items.push({name,qty,price});}
-});
-items.forEach(i=>{const row=document.createElement('div');row.className='summary-line';row.innerHTML='<span>'+i.name+' × '+i.qty+'</span><strong>'+(i.price?((i.qty*i.price).toLocaleString('ar-SA')+' ريال'):'حسب الطلب')+'</strong>';summary.appendChild(row);});
-cartonsEl.textContent=cartons;
-totalEl.textContent=total.toLocaleString('ar-SA')+' ريال';
-if(cartons>=10){wholesaleText.textContent='✓ طلبك مؤهل لسعر الجملة. نؤكد السعر النهائي عبر واتساب.';}else{const remaining=10-cartons;wholesaleText.textContent=remaining+' كراتين متبقية للوصول إلى سعر الجملة.';}
-return {cartons,total,items};
+  summary.innerHTML='';
+  let cartons=0,total=0,items=[],quantities={};
+  products.forEach(card=>{
+    const qty=card._getQty();
+    quantities[card.dataset.key]=qty;
+    if(qty){const name=card.dataset.name,price=Number(card.dataset.price);cartons+=qty;total+=qty*price;items.push({name,qty,price});}
+  });
+  try{localStorage.setItem(STORAGE_KEY,JSON.stringify(quantities));}catch(e){}
+  items.forEach(i=>{const row=document.createElement('div');row.className='summary-line';row.innerHTML='<span>'+i.name+' × '+i.qty+'</span><strong>'+(i.price?((i.qty*i.price).toLocaleString('ar-SA')+' ريال'):'حسب الطلب')+'</strong>';summary.appendChild(row);});
+  cartonsEl.textContent=cartons;
+  totalEl.textContent=total.toLocaleString('ar-SA')+' ريال';
+  if(cartons>=10){wholesaleText.textContent='✓ طلبك مؤهل لسعر الجملة. نؤكد السعر النهائي عبر واتساب.';}else{wholesaleText.textContent=(10-cartons)+' كراتين متبقية للوصول إلى سعر الجملة.';}
+  return {cartons,total,items};
 }
+render();
 document.getElementById('sendOrder').addEventListener('click',()=>{
-const {cartons,total,items}=render();
-if(!cartons){alert('اختر منتجًا واحدًا على الأقل.');return;}
-const lines=['السلام عليكم، أرغب في تكوين طلب من بن شريدة:'];
-items.forEach(i=>lines.push('- '+i.name+': '+i.qty+' كرتون'));
-lines.push('إجمالي الكراتين: '+cartons);
-if(total)lines.push('الإجمالي التقديري: '+total+' ريال');
-if(cartons>=10)lines.push('الطلب 10 كراتين أو أكثر — أرجو تأكيد سعر الجملة والتوصيل.');
-lines.push('أرجو التواصل معي لتأكيد الطلب.');
-window.open('https://wa.me/966591342020?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');
+  const {cartons,total,items}=render();
+  if(!cartons){alert('اختر منتجًا واحدًا على الأقل.');return;}
+  const lines=['السلام عليكم، أرغب في تكوين طلب من بن شريدة:'];
+  items.forEach(i=>lines.push('- '+i.name+': '+i.qty+' كرتون'));
+  lines.push('إجمالي الكراتين: '+cartons);
+  if(total)lines.push('الإجمالي التقديري: '+total+' ريال');
+  if(cartons>=10)lines.push('الطلب 10 كراتين أو أكثر — أرجو تأكيد سعر الجملة والتوصيل.');
+  lines.push('أرجو التواصل معي لتأكيد الطلب.');
+  window.open('https://wa.me/966591342020?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');
 });
 </script>
 </body>
