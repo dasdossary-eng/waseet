@@ -72,7 +72,7 @@
 <div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة">+</button></div>
 </div>
 <div class="bundle-product" data-key="a4" data-name="ورق A4" data-price="100">
-<div><h3>ورق A4</h3><p>ورق مكتبي — 75 غم</p></div>
+<div><h3>ورق A4</h3><p>70 / 75 / 80 غم — الرزمة 500 ورقة — الكرتون 5 رزم — السعر للكرتون</p></div>
 <div class="qty-control"><button type="button" data-action="minus" aria-label="تقليل">−</button><output>0</output><button type="button" data-action="plus" aria-label="زيادة">+</button></div>
 </div>
 <div class="bundle-product" data-key="labels" data-name="ملصقات الشحن" data-price="0">
@@ -86,9 +86,9 @@
 <div id="summary"></div>
 <div class="summary-line"><span>إجمالي الكراتين</span><strong id="cartons">0</strong></div>
 <div class="summary-line summary-total"><span>الإجمالي التقديري</span><strong id="total">0 ريال</strong></div>
-<div class="wholesale" id="wholesale"><strong>الجملة تبدأ من 10 كراتين</strong><span id="wholesaleText">أكمل الكمية للوصول إلى سعر الجملة.</span></div>
+<div class="wholesale" id="wholesale"><strong id="offerTitle">خصم للطلبات من 3 كراتين</strong><span id="wholesaleText">اجمع 3 كراتين أو أكثر من أي منتجات لتحصل على خصم يُؤكَّد عند التواصل.</span></div>
 <button type="button" class="btn btn-primary whatsapp-order" id="sendOrder">أرسل طلبك عبر واتساب</button>
-<p class="bundle-note">السعر الظاهر تقديري حسب الأسعار الحالية. ملصقات الشحن تُسعّر حسب الطلب. التوصيل يُحدد حسب المنطقة والكمية.</p>
+<p class="bundle-note">الأسعار للكرتون الواحد. التوصيل مجاني للأحياء المحددة في سياسة التوصيل. الحد الأقصى للطلب عبر الحاسبة 10 كراتين منوعة؛ للطلبات الأكبر تواصل معنا مباشرة للحصول على سعر الجملة. الخصم يبدأ من 3 كراتين ويُؤكَّد عند التواصل.</p>
 </div>
 </div>
 </div>
@@ -96,16 +96,43 @@
 </main>
 
 <footer>
-<div class="wrap">
-<div class="footer-grid">
-<div class="footer-brand"><img src="../assets/logo.png" alt="بن شريدة" /><p>توريد منتظم للمواد التشغيلية للمطاعم والمقاهي والمحلات والمنشآت في المنطقة الشرقية.</p></div>
-<div class="footer-col"><h4>منتجات</h4><a href="./thermal.html">ورق الكاشير الحراري</a><a href="./mada.html">ورق مدى الحراري</a><a href="./a4.html">ورق A4</a><a href="./labels.html">ملصقات الشحن</a></div>
-<div class="footer-col"><h4>روابط سريعة</h4><a href="./calculator.html">كوّن طلبك بنفسك</a><a href="./partners.html">انضم كشريك توزيع</a><a href="./suppliers.html">سجّل كمورّد</a><a href="./faq.html">الأسئلة الشائعة</a><a href="./terms.html">الشروط والأحكام</a><a href="./payment.html">سياسة الدفع</a><a href="./privacy.html">سياسة الخصوصية</a></div>
-<div class="footer-col"><h4>تواصل</h4><a href="https://wa.me/966591342020" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:binsharida@outlook.sa">binsharida@outlook.sa</a><span>حي طيبة، الدمام</span></div>
-</div>
-<div class="footer-bottom"><span>© 2026 بن شريدة</span><span>Bin Sharida • Supply without interruption</span></div>
-</div>
-</footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="../assets/logo.png" alt="بن شريدة" />
+            <p>توريد منتظم للمواد المكتبية والمطبوعة للمشاريع والمكاتب والمحلات في المنطقة الشرقية.</p>
+            <div class="social-icons" aria-label="وسائل التواصل الاجتماعي"><a class="social-icon" href="https://x.com/binsharida_sa" target="_blank" rel="noopener" aria-label="X — @binsharida_sa" title="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.78 7.75L23.2 22h-6.25l-4.9-7.42L5.56 22H2.43l7.25-8.29L1.8 2h6.4l4.43 6.77L18.9 2Zm-1.1 18h1.73L7.27 3.9H5.42L17.8 20Z"/></svg></a><span class="social-icon" aria-label="حساب LinkedIn قريبًا" aria-disabled="true" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.34H4.96V9h2.97v9.34ZM6.45 7.73a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm11.9 10.61h-2.96v-4.54c0-1.08-.02-2.46-1.5-2.46-1.5 0-1.73 1.17-1.73 2.38v4.62H9.2V9h2.84v1.28h.04c.4-.73 1.36-1.5 2.8-1.5 3 0 3.56 1.97 3.56 4.54v5.02Z"/></svg></span></div>
+          </div>
+          <div class="footer-col">
+            <h4>منتجات</h4>
+            <a href="./thermal.html">ورق الكاشير الحراري</a>
+            <a href="./mada.html">ورق مدى الحراري</a>
+            <a href="./a4.html">ورق A4</a>
+            <a href="./labels.html">ملصقات الشحن</a>
+          </div>
+          <div class="footer-col">
+            <h4>روابط سريعة</h4>
+            <a href="./calculator.html">كوّن طلبك بنفسك</a>
+            <a href="./partners.html">انضم كشريك توزيع</a>
+            <a href="./suppliers.html">سجّل كمورّد</a>
+            <a href="./faq.html">الأسئلة الشائعة</a>
+            <a href="./terms.html">الشروط والأحكام</a>
+            <a href="./payment.html">سياسة الدفع</a>
+            <a href="./privacy.html">سياسة الخصوصية</a>
+          </div>
+          <div class="footer-col">
+            <h4>تواصل</h4>
+            <a href="https://wa.me/966591342020" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="mailto:binsharida@outlook.sa">binsharida@outlook.sa</a>
+            <span>حي طيبة، الدمام</span>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 بن شريدة</span>
+          <span>Bin Sharida • Supply without interruption</span>
+        </div>
+      </div>
+    </footer>
 
 <script>
 const STORAGE_KEY='binSharidaOrderV1';
@@ -114,6 +141,7 @@ const summary=document.getElementById('summary');
 const cartonsEl=document.getElementById('cartons');
 const totalEl=document.getElementById('total');
 const wholesaleText=document.getElementById('wholesaleText');
+const offerTitle=document.getElementById('offerTitle');
 let saved={};
 try{saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}')||{};}catch(e){saved={};}
 products.forEach(card=>{
@@ -121,7 +149,7 @@ products.forEach(card=>{
   const out=card.querySelector('output');
   out.textContent=qty;
   card.querySelector('[data-action="minus"]').addEventListener('click',()=>{qty=Math.max(0,qty-1);out.textContent=qty;render();});
-  card.querySelector('[data-action="plus"]').addEventListener('click',()=>{qty+=1;out.textContent=qty;render();});
+  card.querySelector('[data-action="plus"]').addEventListener('click',()=>{const current=products.reduce((sum,p)=>sum+p._getQty(),0);if(current>=10){alert('الحد الأقصى للطلب عبر الحاسبة 10 كراتين. للطلبات الأكبر تواصل معنا لسعر الجملة.');return;}qty+=1;out.textContent=qty;render();});
   card._getQty=()=>qty;
 });
 function render(){
@@ -136,7 +164,7 @@ function render(){
   items.forEach(i=>{const row=document.createElement('div');row.className='summary-line';row.innerHTML='<span>'+i.name+' × '+i.qty+'</span><strong>'+(i.price?((i.qty*i.price).toLocaleString('ar-SA')+' ريال'):'حسب الطلب')+'</strong>';summary.appendChild(row);});
   cartonsEl.textContent=cartons;
   totalEl.textContent=total.toLocaleString('ar-SA')+' ريال';
-  if(cartons>=10){wholesaleText.textContent='✓ طلبك مؤهل لسعر الجملة. نؤكد السعر النهائي عبر واتساب.';}else{wholesaleText.textContent=(10-cartons)+' كراتين متبقية للوصول إلى سعر الجملة.';}
+  if(cartons>=3){offerTitle.textContent='طلبك يستحق خصماً';wholesaleText.textContent='اجمع 3 كراتين أو أكثر من أي منتجات، وسيتم تأكيد الخصم عند التواصل.';}else{offerTitle.textContent='خصم للطلبات من 3 كراتين';wholesaleText.textContent='أضف '+(3-cartons)+' كراتين للاستفادة من الخصم.';}
   return {cartons,total,items};
 }
 render();
@@ -147,8 +175,10 @@ document.getElementById('sendOrder').addEventListener('click',()=>{
   items.forEach(i=>lines.push('- '+i.name+': '+i.qty+' كرتون'));
   lines.push('إجمالي الكراتين: '+cartons);
   if(total)lines.push('الإجمالي التقديري: '+total+' ريال');
-  if(cartons>=10)lines.push('الطلب 10 كراتين أو أكثر — أرجو تأكيد سعر الجملة والتوصيل.');
-  lines.push('أرجو التواصل معي لتأكيد الطلب.');
+  if(cartons>=3)lines.push('أرجو تأكيد الخصم المستحق لطلبي.');
+  if(cartons===10)lines.push('وصلت إلى الحد الأعلى للطلب عبر الحاسبة.');
+  if(cartons>=10)lines.push('لدي طلب أكبر من 10 كراتين وأرغب في سعر الجملة.');
+  lines.push('أرجو التواصل معي لتأكيد الطلب والتوصيل.');
   window.open('https://wa.me/966591342020?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');
 });
 </script>
